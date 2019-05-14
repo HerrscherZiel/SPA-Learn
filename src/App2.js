@@ -1,15 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Link} from 'react-router-dom';
 import Main from "./component/Main";
-import SimpleAppBar from './component/SimpleAppBar';
 import ButtonAppBar from './component/ButtonAppBar';
-import CardProduct from './component/CardProduct';
-import PersonList from './PersonList';
 
-import Product from "./Product.js";
-
-class App extends Component {
+class App2 extends Component {
 
 
     render() {
@@ -34,4 +28,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default App2;
