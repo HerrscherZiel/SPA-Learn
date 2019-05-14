@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
   width: 100% ;
+  color: #ffffff;
+  background-size: cover;
 }
 
 .App:after {
@@ -15,6 +16,14 @@
   pointer-events: none;
   text-align: left;
 }
+
+
+
+/* .container-fluid {
+  background-image: url('image/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+} */
 
 .App-header {
   background-color: #dee3da;
@@ -43,14 +52,21 @@ h3{
   }
 }
 
-.row{
+.AAA {
+  background-image: url('/image/Sea Blue.jpg');
+}
+
+h1{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-display: 'Lucida Sans Unicode';
+  font-style: italic;
 }
 
 .column {
   float: left;
   width: 24%;
   text-align: center;
-  border : 1px solid gray;
   margin-right: 5px;
   background-color: #ffffff;
 }

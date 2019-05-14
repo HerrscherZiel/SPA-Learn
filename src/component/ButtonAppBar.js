@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import {Link} from 'react-router-dom';
 
 const styles = {
   root: {
@@ -24,23 +25,24 @@ const styles = {
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit" className={classes.grow}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit" className={classes.button} href="/home">Home</Button>&nbsp;&nbsp;
-                <Button color="inherit" className={classes.button} href="/profile">Profile</Button>&nbsp;&nbsp;
-                <Button color="inherit" className={classes.button} href="/portofolio">Portofolio</Button>&nbsp;&nbsp;
-                <Button color="inherit" className={classes.button} href="/kontak">Kontak</Button>&nbsp;&nbsp;
-        </Toolbar>
-      </AppBar>
+    <div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+     
+    <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+        
+            <a class="mdl-navigation__link" ><Link to="/home">Home</Link></a>
+            <a class="mdl-navigation__link" ><Link to="/profile">Profile</Link></a>
+            <a class="mdl-navigation__link" ><Link to="/portofolio">Portfolio</Link></a>
+            <a class="mdl-navigation__link" ><Link to="/kontak">Contact</Link></a>
+        </nav>
     </div>
+</header>
+>
+</div>
+</div>
   );
 }
 

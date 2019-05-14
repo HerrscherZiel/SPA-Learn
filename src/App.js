@@ -4,16 +4,31 @@ import {Link} from 'react-router-dom';
 import Main from "./component/Main";
 import SimpleAppBar from './component/SimpleAppBar';
 import ButtonAppBar from './component/ButtonAppBar';
-import SimpleBadge from './component/SimpleBadge';
+import CardProduct from './component/CardProduct';
+
+import Product from "./Product.js";
 
 class App extends Component {
+
+
     render() {
         return (
-            <div>
-                <ButtonAppBar/>
-                <p><Main/></p>
-                <SimpleBadge/>
-            </div>
+
+           
+
+            <div className="App">
+                    <ButtonAppBar/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <p><Main/></p>
+             
+
+                </div>
+
+            
         );
     }
 }
