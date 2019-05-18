@@ -2,12 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom';
 import Main from "./component/Main";
-import SimpleAppBar from './component/SimpleAppBar';
-import ButtonAppBar from './component/ButtonAppBar';
-import CardProduct from './component/CardProduct';
-import PersonList from './PersonList';
 
-import Product from "./Product.js";
+import ButtonAppBar from './component/ButtonAppBar';
 
 class App extends Component {
 

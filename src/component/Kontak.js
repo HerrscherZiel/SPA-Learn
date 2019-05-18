@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import Grid from '@material-ui/core/Grid';
 
 class Kontak extends Component {
     render() {
         return (
             <div>
                 
+                <Grid container justify="center" alignItems="center">        
         <main class="mdl-layout__content">
             <div class="mdl-grid portfolio-max-width portfolio-contact">
                 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
@@ -43,9 +45,8 @@ class Kontak extends Component {
                     
                 </div>
             </div>
-            
-    
         </main>
+        </Grid>
     </div>
             
         );

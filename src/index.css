@@ -6,9 +6,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url('./image/work.jpg');
+    /* background-color: #c6c4c4; */
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.p1 {
+  color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.jumbotron {
+  background: none
 }

@@ -6,6 +6,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Progress from './Progress';
 
 const styles = theme => ({
   root: {
@@ -41,38 +42,44 @@ class ControlledExpansionPanels extends React.Component {
       <div className={classes.root}>
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Nama</Typography>
-            <Typography className={classes.secondaryHeading}>Elang Bayu Aji Hartanto</Typography>
+            <Typography className={classes.heading}>Description</Typography>
+            <Typography className={classes.secondaryHeading}>Hi ! I'm a Web Designer and Back-End Developer...</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Nama saya adalah Elang Bayu Aji Hartanto
+              Nama saya adalah Elang Bayu Aji Hartanto, Nama saya adalah Elang Bayu Aji Hartanto, Nama saya adalah Elang Bayu Aji Hartanto, Nama saya adalah Elang Bayu Aji Hartanto
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Tempat Tanggal Lahir</Typography>
+            <Typography className={classes.heading}>Education</Typography>
             <Typography className={classes.secondaryHeading}>
-            Temanggung, 14 November 2019
+            University Student at Universitas Gadjah Mada
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Saya lahir di Temanggung, Jawa Tengah pada 14 November 1998
+              2017 ~ Now at Universitas Gadjah Mada
+              <hr></hr>
+              2013 ~ 2016 at SMA N 1 Temanggung
+              <hr></hr> 
+              2010 ~ 2013 at SMP N 2 Temanggung
+              <hr></hr> 
+              2004 ~ 2010 at SD Muhammadiyah Parakan
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>Tempat Tinggal</Typography>
+            <Typography className={classes.heading}>Skill</Typography>
             <Typography className={classes.secondaryHeading}>
-              Traji, Parakan, Temanggung, Jawa Tengah
+              HTML, CSS, PHP, REACT, Laravel, C++
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Saya tinggal di desa Traji, Kabupaten Temanggung, provinsi Jawa Tengah
+              <Progress></Progress>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
