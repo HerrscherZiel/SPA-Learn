@@ -23,26 +23,20 @@ function InsetDividers(props) {
   return (
     <List className={classes.root}>
       <ListItem>
-        <Avatar>
-          <ImageIcon />
-        </Avatar>
-        <ListItemText primary="Name" secondary="Elang Bayu Aji Hartanto" />
+        
+        <ListItemText primary="Nama" secondary="Elang Bayu Aji Hartanto" />
       </ListItem>
       <li>
         <Divider variant="inset" />
       </li>
       <ListItem>
-        <Avatar>
-          <WorkIcon />
-        </Avatar>
-        <ListItemText primary="Date of Birth" secondary="November 14, 1998" />
+        
+        <ListItemText primary="Tanggal Lahir" secondary="November 14, 1998" />
       </ListItem>
       <Divider variant="inset" component="li" />
       <ListItem>
-        <Avatar>
-          <BeachAccessIcon />
-        </Avatar>
-        <ListItemText primary="Address" secondary="Temanggung, Central Java" />
+
+        <ListItemText primary="Alamat" secondary="Temanggung, Central Java" />
       </ListItem>
     </List>
   );

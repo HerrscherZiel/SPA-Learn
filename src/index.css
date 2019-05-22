@@ -7,15 +7,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image:url('./image/work.jpg');
-    /* background-color: #c6c4c4; */
     background-repeat: no-repeat;
     background-position:center center;
     background-attachment:fixed;
     background-size:cover;
+
+    /* background-image: linear-gradient(to bottom, #f89999, #f6888c, #f47780, #f16475, #ed4f6a);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    background-size:cover */
 }
 
 .p1 {
   color: black;
+}
+
+.card-panel {
+  /* background: transparent; */
+}
+
+.welcome {
+  background-color: #ee6e73;
 }
 
 code {
@@ -23,6 +36,32 @@ code {
     monospace;
 }
 
-.jumbotron {
-  background: none
+.hrr {
+  border: 5px solid whitesmoke;
+  border-radius: 2px;
+  
 }
+
+.hrrr {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.hrrrr {
+  border: 4px solid #ee6e73;
+  border-radius: 2px;
+}
+
+.jumbotron {
+  background: transparent;
+  padding-top: 30px;
+}
+
+.con2 {
+  align-content: center;
+} 
+
+a {
+  color: white;
+}
+

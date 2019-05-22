@@ -1,56 +1,126 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
+import { CSSTransitionGroup } from 'react-transition-group';
+import Git from '../image/github-logo.svg';
+import Steam from '../image/steam.svg';
+import Tw from '../image/twitter.svg';
+import Dis from '../image/discord.svg';
 
-class Kontak extends Component {
-    render() {
+
+
+
+const Kontak = () =>{
         return (
-            <div>
+            <CSSTransitionGroup
+      transitionName="homeTransition"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
+       
+            <div className="container">
                 
-                <Grid container justify="center" alignItems="center">        
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width portfolio-contact">
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Email me</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" image/bg.jpg" border="0" alt=""></img>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <p>
-                            Untuk informasi lebih lanjut anda dapat mengemail saya pada form di bawah
-                        </p>
+                    
+                    <div className="row">
+                    
+                    <Grid container justify="center" alignItems="center">
+                            
+                            <div className="col s12 m12 l12">
+                            <div class="jumbotron">
+                            
+                                <h1 class="display-3" style={{color:"whitesmoke", textShadow:"3px 3px black"}}>Find Me On !</h1>
+                                
+                            </div>
+                            </div>
+                    </Grid>        
 
-                        <form action="#" class="">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name"></input>
-                                <label class="mdl-textfield__label" for="Name">Name...</label>
-                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            <Grid container justify="center" alignItems="center">
+                            <div className="container con2 center" >
+                            <div className="col s6 m6 l3">
+                                
+                                <img src={Steam} alt="me" class="responsive-img" width="40%"/>
+                                <hr className="hrrr"></hr>    
+                                <p className="lead"><a href="https://steamcommunity.com/profiles/76561198810038230/home" style={{textShadow:"2px 2px black", fontWeight:"bold"}}>Regenschwarz</a></p>
+
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="Email"></input>
-                                <label class="mdl-textfield__label" for="Email">Email...</label>
+                            <div className="col s6 m6 l3">
+                                
+                                <img src={Git} alt="me" class="responsive-img" width="40%"/>
+                                <hr className="hrrr"></hr>
+                                <p className="lead"><a href="https://github.com/HerrscherZiel "style={{textShadow:"2px 2px black", fontWeight:"bold"}}>HerrscherZiel</a></p>
+                                
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
-                                <label class="mdl-textfield__label" for="note">Enter note</label>
+                            <div className="col s6 m6 l3">
+                                
+                                <img src={Dis} alt="me" class="responsive-img" width="40%"/>
+                                <hr className="hrrr"></hr>
+                                <p className="lead"><a href="https://discordapp.com/"style={{textShadow:"2px 2px black", fontWeight:"bold"}}>#7700Arne</a></p>
+
                             </div>
-                            <p>
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-                                    Submit
-                                </button>
-                            </p>
+                            <div className="col s6 m6 l3">
+                                
+                                <img src={Tw} alt="me" class="responsive-img" width="40%"/>
+                                <hr className="hrrr"></hr>
+                                <p className="lead" href=""><a href="https://twitter.com/HerrscherZiel"style={{ fontWeight:"bold",textShadow:"2px 2px black"}}>HerrscherZiel</a></p>
+
+                            </div>
+                            </div>
+                           
+                    </Grid>      
+                            
+                    <Grid container justify="center" alignItems="center">
+                            
+                            <div className="col s12 m12 l12">
+                            <div class="jumbotron">
+                            
+                                <h1 class="display-3" style={{color:"whitesmoke", textShadow:"3px 3px black"}}>Or E-mail me below</h1>
+                                
+                            </div>
+                            </div>
+                    </Grid>    
+
+                    </div>    
+                           
+                            
+                    <div className="card-panel" style={{color:"black"}} >
+                        <h5 style={{textAlign:"center"}}>E-Mail saya melalui form dibawah :</h5><hr className="hrrrr"></hr> 
+                        <br></br>
+                        <form class="col s6 m6 l6" >
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input  id="first_name" type="text" class="validate" ></input>
+                            <label for="first_name">Nama</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="email" type="email" class="validate"></input>
+                            <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="password" type="text" class="validate" ></input>
+                            <input id="password" type="text" class="validate"></input>
+                            <input id="password" type="text" class="validate"></input>
+                            <label for="password">Pesan</label>
+                            </div>
+                        </div>
+                        <Grid container justify="center" alignItems="center"><a class="btn btn-lg" style={{textDecoration: "none", color:"white", backgroundColor:"#ee6e73"}}>
+                                Kirim Email     </a> </Grid>
+
                         </form>
                     </div>
-                    
+        
+                                
+                              
+                        
+                  
+
                 </div>
-            </div>
-        </main>
-        </Grid>
-    </div>
-            
+    </CSSTransitionGroup>
         );
     }
-}
+
 
 export default Kontak;

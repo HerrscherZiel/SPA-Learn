@@ -1,6 +1,7 @@
 .App {
   width: 100% ;
-  color: #3a0c63;
+  color: whitesmoke
+  ;
   background-size: cover;
 }
 
@@ -9,21 +10,23 @@
   display: table;
   clear: both;
 }
-
-
-.App-header {
-  background-color: #dee3da;
-  min-height: 100vh;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  /*color: white;*/
+a {
+  color: white;
+  position: sticky;
 }
-
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
 .App-link {
-  color: #61dafb;
+  color: white;
+}
+nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  
+
 }
 
 @keyframes App-logo-spin {
@@ -40,6 +43,7 @@ h2 {
   font-display: 'Lucida Sans Unicode';
   font-style: italic;
   color: #ff5910;
+  text-align: center;
 }
 
 h3 {
@@ -66,7 +70,14 @@ h1{
   background-color: #ffffff;
 }
 
-
+.homeTransition-appear{
+  opacity: 0;
+}
+ 
+.homeTransition-appear.homeTransition-appear-active{
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
 
 /* Clear floats after the columns */
 .row:after {

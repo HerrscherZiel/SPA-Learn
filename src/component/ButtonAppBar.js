@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 import { withStyles } from '@material-ui/core/styles';
-
+import HZ from '../image/Hz.png';
 import {Link} from 'react-router-dom';
 
 const styles = {
@@ -12,31 +13,38 @@ const styles = {
     flexGrow: 1,
   },
   menuButton: {
-    marginLeft: -12,
+    marginLeft: 20,
     marginRight: 20,
   },
 };
 
+
 function ButtonAppBar(props) {
   const { classes } = props;
+  
   return (
     <div>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-     
-    <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-
-            <a class="mdl-navigation__link" ><Link to="/home">Home</Link></a>
-            <a class="mdl-navigation__link" ><Link to="/profile">Profile</Link></a>
-            <a class="mdl-navigation__link" ><Link to="/portofolio">Portfolio</Link></a>
-            <a class="mdl-navigation__link" ><Link to="/kontak">Contact</Link></a>
-        </nav>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+    
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><Link to="home" style={{textDecoration:'none'}}>Ziel</Link></i></a>
+      <ul id="nav-mobile" class="right">
+        <li><Link to="home" style={{textDecoration:'none'}}>Home</Link></li>
+        <li><Link to="profile" style={{textDecoration:'none'}}>Profile</Link></li>
+        <li><Link to="portofolio" style={{textDecoration:'none'}}>Portofolio</Link></li>
+        <li><Link to="kontak" style={{textDecoration:'none'}}>Contact</Link></li>
+      </ul>
     </div>
-</header>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+  </div>       
 
-</div>
 </div>
   );
 }
